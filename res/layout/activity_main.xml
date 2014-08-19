@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/startB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactsBtn"
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/contactsBtn"
+        android:onClick="startS"
+        android:text="start" />
+
+    <Button
+        android:id="@+id/stopB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startB"
+        android:layout_alignBottom="@+id/startB"
+        android:layout_toRightOf="@+id/contactsBtn"
+        android:onClick="stopS"
+        android:text="stop" />
+
+    <Button
+        android:id="@+id/contactsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:onClick="gotoConatcts"
+        android:text="Contacts" />
+
+</RelativeLayout>
